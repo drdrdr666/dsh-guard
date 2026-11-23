@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Operation guard",
+    "description": "Intercepts four kinds of tool calls before they run: simulated keyboard or mouse input (which can land in your other windows), system-wide configuration changes, irreversible deletes, and plaintext credential exposure. A match asks you to confirm instead of silently proceeding.",
+    "detail": "docs/DETAIL.md"
+  }
+}

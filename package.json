@@ -1,0 +1,44 @@
+{
+  "name": "dsh-guard",
+  "version": "0.1.0",
+  "description": "工具调用前的拦截守卫：模拟键鼠、改系统配置、不可逆删除、凭据明文外发，命中即弹确认由你决定",
+  "private": false,
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./rules": "./lib/rules.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "guard",
+    "permission",
+    "safety"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drdrdr666/dsh-guard.git"
+  },
+  "author": "drdrdr666",
+  "license": "MIT"
+}
